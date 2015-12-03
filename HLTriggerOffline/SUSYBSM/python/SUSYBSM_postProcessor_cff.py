@@ -37,6 +37,9 @@ from HLTriggerOffline.SUSYBSM.SUSYBSM_alphaT_cff import *
 SusyExoPostVal = cms.Sequence(SUSY_HLT_HT_MET_POSTPROCESSING +
                               SUSY_HLT_InclusiveHT_POSTPROCESSING +
                               SUSY_HLT_InclusiveMET_POSTPROCESSING +
+                              SUSY_HLT_InclusiveMET_NoNoiseCleaning_POSTPROCESSING +
+                              SUSY_HLT_InclusiveMET_HBHECleaned_POSTPROCESSING +
+                              SUSY_HLT_InclusiveMET_JetIdCleaned_POSTPROCESSING +
                               SUSY_HLT_MET_BTAG_POSTPROCESSING + 
                               SUSY_HLT_MET_MUON_POSTPROCESSING +
                               SUSY_HLT_InclusiveHT_aux200_POSTPROCESSING +
@@ -57,6 +60,9 @@ SusyExoPostVal = cms.Sequence(SUSY_HLT_HT_MET_POSTPROCESSING +
                               SUSY_HLT_HT_DoubleMuon_POSTPROCESSING +
                               SUSY_HLT_HT_DoubleEle_POSTPROCESSING +
                               SUSY_HLT_HT_MuEle_POSTPROCESSING +
+							  SUSY_HLT_HT250_DoubleMuon_POSTPROCESSING +
+                              SUSY_HLT_HT250_DoubleEle_POSTPROCESSING +
+                              SUSY_HLT_HT250_MuEle_POSTPROCESSING +
                               SUSY_HLT_Muon_BJet_POSTPROCESSING +
                               SUSY_HLT_Electron_BJet_POSTPROCESSING +
                               SUSY_HLT_Mu_HT_SingleLepton_POSTPROCESSING +
@@ -100,6 +106,9 @@ SusyExoPostVal_fastsim = cms.Sequence(SUSY_HLT_HT_MET_FASTSIM_POSTPROCESSING +
                                       SUSY_HLT_HT_DoubleMuon_FASTSIM_POSTPROCESSING +
                                       SUSY_HLT_HT_DoubleEle_FASTSIM_POSTPROCESSING +
                                       SUSY_HLT_HT_MuEle_FASTSIM_POSTPROCESSING +
+									  SUSY_HLT_HT250_DoubleMuon_FASTSIM_POSTPROCESSING +
+                                      SUSY_HLT_HT250_DoubleEle_FASTSIM_POSTPROCESSING +
+                                      SUSY_HLT_HT250_MuEle_FASTSIM_POSTPROCESSING +
                                       SUSY_HLT_Muon_BJet_FASTSIM_POSTPROCESSING +
                                       SUSY_HLT_Electron_BJet_FASTSIM_POSTPROCESSING)
 
